@@ -1,0 +1,23 @@
+Behaviour
+- Onboard User with working hours.
+- Users can be grouped into a team and User belongs to only one team.
+- Event creation with participants with start and end time (on same day).
+- Event participants can be Users or Teams or both.
+- User can participate in only one event at a time.
+- During Event creation, User can specify required quorum of teams (same for all teams), say N.
+- When an Event is added, block N members against the Event. If N users aren't available, Event
+  can't be created.
+
+Interactions
+- Create User.
+- Create Team of Users.
+- Create Event for Users/Teams.
+- Get Events in a time range for a User.
+- Suggest available slots for given list of users/teams for a given day.
+
+Bonus
+- Update Event time, if not possible return status accordingly.
+- Support recurring Event (time, start_date, end_date, frequency).
+
+*Note
+- Use in-memory data structure only.

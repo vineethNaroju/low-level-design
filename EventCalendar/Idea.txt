@@ -1,0 +1,16 @@
+TimeSlot
+- Date startTime, endTime
+
+abstract Participant
+- String uniqueName
+
+Team extends Participant
+- List of Users
+
+User extends Participant
+- TimeSlot workingHour
+- maybe part of a single Team
+- part of multiple Events
+
+Event
+- List of participants
